@@ -4,3 +4,13 @@
     font-weight: 400;
     box-sizing: border-box;
 }
+.box,.im{
+    height: 344px;
+}
+.button{
+    width: 100px;
+    height: 53px;
+}
+.xbox{
+    height: 167px;
+}
