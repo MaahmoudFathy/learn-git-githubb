@@ -14,3 +14,31 @@
 .xbox{
     height: 167px;
 }
+.imagesite1{
+    height: 334px;
+    object-fit: cover;
+    object-position: top;
+}
+.shop-here{
+    top: 1rem;
+    left: 1rem;
+}
+.badge-c{
+    top: 1rem;
+    left: 1rem;
+}
+.banner-ads{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(https://img.freepik.com/free-photo/excited-good-looking-girl-sunglasses-dancing-ginger-blissful-woman-posing-rosy-with-hair-waving_197531-11058.jpg?t=st=1745012950~exp=1745016550~hmac=eb9df3e791ab6261f8c6cb32026d633faa3b36514e2dcbd5c7a2bdeca4093185&w=2000) ;
+    background-size: cover;
+}
+.image-sec3{
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width:1024px) {
+    .text-hero{
+        font-size: 0.8rem;}
+    .image-card{
+     height: fit-content;
+}
+    }
