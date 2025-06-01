@@ -1,0 +1,221 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: var(--font-sec);
+font-weight: 500;
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin-top: 5em;
+}
+.container{
+   padding:5em;
+}
+:root{
+    --main-color:#6c80d9;
+    --main-black:black;
+    --main-border:solid 1px rgba(0, 0, 0, 0.089);
+    --main-orange:#ffaa9c;
+    --font-gray:#686e7d;
+    --color-orange:##ffaa9c;
+    --border:1px solid rgba(0, 0, 0, 0.1);
+    --radius-sm:0.4em;
+    --radius-lg:0.6em;
+    --radius-xl:1em;
+    --font-main:"Quicksand", sans-serif;;
+    --font-sec:"Poppins", sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+.header-category{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    align-items: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.header-category span{
+    font-weight: 500;
+    color: var(--font-gray);
+}
+.header-category h3{
+    cursor: pointer;
+   font-family: var(--font-main);
+   font-weight: 500;
+}
+
+.header-category h3.active{
+   color: var(--main-color ); 
+   font-family: var(--font-main);
+}
+.header-Text h2{
+    font-family: var(--font-main);
+    font-weight: 500;
+    color: var(--main-color);
+}
+.header-Text h2 span{
+    font-weight: 500;
+    color: var(--font-gray);
+    font-family: var(--font-main);
+}
+.header-Text p{
+    font-family: var(--font-sec);
+}
+.All-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+}
+.productCard{
+    border-radius: var(--radius-lg);
+    border: var(--border);
+    overflow: hidden;
+    width: calc((100% - 3em)/4);
+}
+.product-image{
+    height: 50vh;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: var(--border);
+    position: relative;
+}
+.product-image img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+.product-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .2em;
+}
+.product-price strong{
+    font-family: var(--font-sec);
+    font-weight: bold;
+    color: var(--font-gray);
+}
+.product-price del{
+    font-family: var(--font-sec);
+    color: var(--font-gray);
+}
+.product-content{
+padding: 1em;
+display: flex;
+flex-direction: column;
+gap: 1em;
+}
+.product-content-header span{
+    font-family: var(--font-sec);
+    color: var(--font-gray);
+}
+.product-name h2{
+    color: black;
+    font-family: var(--font-sec);
+    font-size: 1.1em;
+}
+.rate svg.active{
+    color: var(--main-orange);
+}
+.product-content-header{
+    padding: 0.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+.product-price-weight{    
+    padding: 0.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+.product-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.product-weight h4{
+    color: var(--font-gray);
+}
+.product-image:hover img{
+    transform: scale(1.2);
+}
+.product-image:hover .icons{
+    bottom: 1em;
+}
+.icon:hover{
+    background-color: var(--main-color);
+}
+.icon:hover  svg{
+    color: white;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5em;
+    position: absolute;
+    bottom: -5em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: .5s;
+}
+
+.icon{
+    width: 2em;
+    height: 2em;
+    border-radius: var(--radius-sm);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    }
+    .out-of-stock{
+        background-color: var(--main-color);
+        color: aliceblue;
+        border-radius: var(--radius-sm);
+        padding: 4px;
+    }
+/* Media query */
+@media (max-width:1024px) {
+   .container{
+    padding: 2em;
+   } 
+   html{
+    font-size: 14px;
+   }
+}
+@media (max-width:600px) {
+   .container{
+    padding: 1em;
+   } 
+   html{
+    font-size: 12px;
+   }
+      .header{
+    justify-content: center;
+    align-items: center;}
+}
